@@ -2,19 +2,48 @@
 <html>
     <head>
         <link href="mainStyles.css" type="text/css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e2c53b87fa.js" crossorigin="anonymous"></script>
+        <script src="matter-js-0.14.2/build/matter.js" type="text/javascript"></script>
+        <script src="matter-js-0.14.2/demo/lib/matter-wrap.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <title></title>
     </head>
     <body>
-        <div id="container">
-        </div>
+        <!-- <video autoplay muted loop id="videoBG">
+            <source src="drops.mp4" type="video/mp4">
+        </video> -->
+        <canvas id="canvas">
+            <!-- <div id="container"> -->
+                    <!-- <h1 class="hiddenText">Here's some text!</h1> -->
+            <!-- </div> -->
+        </canvas>
         <div class='resizable'>
-                <div class='resizers'>
-                    <div class='resizer top-left'></div>
-                    <div class='resizer top-right'></div>
-                    <div class='resizer bottom-left'></div>
-                    <div class='resizer bottom-right'></div>
-                </div>
+            <div id="hiddenContainer">
+                <!-- <h1 class="hiddenText">Here's some text!</h1> -->
             </div>
+            <div class='resizers'>
+                <div id="umbrella">
+                    <div id="tophalf">
+                        <div id="leftBowl"><div class="overCircle"></div></div>
+                        <div id="middleBowl"></div>
+                        <div id="rightBowl"><div class="overCircle"></div></div>
+                    </div>
+                    <div id="SHAFT"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="doThisContainer">
+                    <div class="corner topLeft"></div>
+                    <div class="corner topRight"></div>
+                    <div class="corner bottomLeft"></div>
+                    <div class="corner bottomRight"></div>
+                </div>
+                <div class='resizer top-left'></div>
+                <div class='resizer top-right'></div>
+                <div class='resizer bottom-left'></div>
+                <div class='resizer bottom-right'></div>
+            </div>
+        </div>
+        <script src="rainDrops.js"></script>
         <script src="mainScript.js"></script>
     </body>
 </html>
