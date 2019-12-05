@@ -26,7 +26,7 @@ function makeResizableDiv(div) {
         window.addEventListener('mousemove', resize)
         window.addEventListener('mouseup', stopResize)
         $("#doThisContainer").hide();
-        setTimeout(showThePeople, 5000);
+        setTimeout(showThePeople, 10000);
       })
       
       function resize(e) {
