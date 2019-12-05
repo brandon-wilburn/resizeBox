@@ -167,7 +167,7 @@ Matter.use(
 
     // add bodies
     var stack = Composites.stack(w/2-20, 5, 20, 20, 0, 0, function(x, y) {
-        return Bodies.circle(x, y, Common.random(2, 30), { friction: 0.8, restitution: 1, density: 0.00001 }, 1);
+        return Bodies.circle(x, y, Common.random(2, 30), { friction: 0.1, restitution: 1, density: 1 }, 1);
     });
     World.add(world, stack);
 
